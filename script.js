@@ -1,4 +1,6 @@
 
+/* the best article to learn how to implement minimax algorithm for tic-tac-toe is https://medium.freecodecamp.com/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37#.jv5w63sps
+*/
 var table= [0,1,2,3,4,5,6,7,8];
 var computer = 'O';
 var human = 'X';
