@@ -3,8 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Tic-tac-toe Game</title>
-  </head>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="mastyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"> 
+</head>
     <body>
-      <h1>tic</h1>
+        <h1 class="text-center">Tic-Tac-Toe game</h1>
+        <div class='btn-group'>
+        <button type="button" class="btn btn-primary switch" onclick='playX()'>X</button>
+        <button type="button"  class="btn btn-primary switch" onclick='playO()'>O</button>
+        </div>
+        <div id='result'></div>
+        <div id='board'><table>
+            <tr>
+                  <td id ='0'></td>
+                  <td id='1'></td>
+                  <td id='2'></td>
+              </tr>
+               <tr>
+                  <td id ='3'></td>
+                  <td id='4'></td>
+                  <td id='5'></td>
+               </tr>
+                <tr>
+                  <td id ='6'></td>
+                  <td id='7'></td>
+                  <td id='8'></td>
+                </tr>
+            
+            </table></div>    
+    <button class='btn btn-success' id = 'reset' onclick="reset()">Reset</button>    
+        <script src="script.js"></script> 
     </body>
-    </html>
+</html>  
