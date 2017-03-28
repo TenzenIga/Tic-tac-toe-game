@@ -14,6 +14,8 @@ function playX(){
  function playO(){
      if(btnOn){human='O';
      computer='X';
+     $('#0').text(computer);
+     table[0] = computer;          
  }
  }
 //array of empty spots
@@ -111,7 +113,7 @@ $('td').on('click', function(e){ // write X or O on click
             $('#result').text("Computer won!");
             keys=false;
         }
-        if(tie.length===1){
+        if(tie.length===1 || tie.length===2){
              $('#result').text('Tie!');
             
         }
@@ -125,4 +127,5 @@ function reset(){
     $('td').text('');
     keys=true;
     btnOn=true;
+ $('#result').text('');
 }
