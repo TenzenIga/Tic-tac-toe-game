@@ -10,12 +10,17 @@
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet"> 
 </head>
     <body>
+        <div class="container-fluid">
         <h1 class="text-center">Tic-Tac-Toe game</h1>
-        <div class='btn-group'>
+    <div class="text-center" ><div class='btn-group'>
+        
         <button type="button" class="btn btn-primary switch" onclick='playX()'>X</button>
-        <button type="button"  class="btn btn-primary switch" onclick='playO()'>O</button>
-        </div>
-       
+        <button type="button"  class="btn btn-danger switch" onclick='playO()'>O</button>
+        </div></div>
+            
+        <button class='btn btn-info' id = 'reset' onclick="reset()">Reset</button> 
+             
+        
         <div id='board'><table>
             <tr>
                   <td id ='0'></td>
@@ -34,8 +39,10 @@
                 </tr>
             
             </table></div>    
-    <button class='btn btn-success' id = 'reset' onclick="reset()">Reset</button>    
+      
         <div id='result'></div>  
+        </div>
+        
       <script src="script.js"></script> 
     </body>
 </html>  
